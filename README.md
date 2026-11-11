@@ -15,5 +15,5 @@ Abrir `index.html` directamente en cualquier navegador.
 
 ## Pendiente para la versión final
 
-- Configurar la clave de envío de correo y el número de WhatsApp en `assets/js/script.js`.
+- Configurar la clave de envío de correo (`WEB3FORMS_ACCESS_KEY`) en `assets/js/script.js`.
 - Revisar los datos y horarios marcados en `index.html`.

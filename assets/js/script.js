@@ -12,7 +12,7 @@
  */
 const ACADEMY_CONFIG = {
   FACEBOOK_URL: 'https://www.facebook.com/p/TEA-The-English-Academy-100054321229235/?locale=es_ES',
-  WHATSAPP_NUMBER: '',
+  WHATSAPP_NUMBER: '34690350543',
   WEB3FORMS_ACCESS_KEY: '',
 };
 
