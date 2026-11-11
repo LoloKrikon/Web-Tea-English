@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEA · The English Academy | Alcalá de Guadaíra</title>
+  <meta
+    name="description"
+    content="TEA The English Academy en Alcalá de Guadaíra (Sevilla). Clases de inglés para todas las edades y preparación de exámenes oficiales."
+  />
+
+  <!-- Tipografía moderna y minimalista -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand" aria-label="TEA The English Academy - Inicio">
+        <span class="brand__mark" aria-hidden="true">
+          <svg width="42" height="40" viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 4H40C43.3137 4 46 6.68629 46 10V28C46 31.3137 43.3137 34 40 34H25L15 41V34H8C4.68629 34 2 31.3137 2 28V10C2 6.68629 4.68629 4 8 4Z" fill="#6BA4D0"/>
+            <text x="24" y="23.5" text-anchor="middle" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="13.5" letter-spacing="0.06em">TEA</text>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>THE ENGLISH ACADEMY</strong>
+          <small>Alcalá de Guadaíra</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Inicio</a></li>
+          <li><a href="#nosotros" class="nav__link">Sobre nosotros</a></li>
+          <li><a href="#cursos" class="nav__link">Cursos</a></li>
+          <li><a href="#resultados" class="nav__link">Resultados</a></li>
+          <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a
+          href="https://www.facebook.com/p/TEA-The-English-Academy-100054321229235/?locale=es_ES"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="icon-btn"
+          title="Facebook de TEA The English Academy"
+          aria-label="Facebook de TEA The English Academy"
+          data-facebook-link
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+          </svg>
+        </a>
+        <a href="#contacto" class="btn btn--primary btn--sm">Solicitar info</a>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- INICIO / HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <div class="eyebrow">
+            <span class="eyebrow__dot"></span>
+            Alcalá de Guadaíra · C. San Francisco, 10
+          </div>
+          <h1 class="hero__title">
+            Aprende inglés con
+            <span class="hero__italic">confianza real</span>
+            y resultados demostrables.
+          </h1>
+          <p class="hero__subtitle">
+            En <strong>TEA · The English Academy</strong> llevamos más de 10 años formando a niños,
+            jóvenes y adultos en Alcalá de Guadaíra, con profesoras que han vivido en Inglaterra y
+            transmiten un inglés real, cercano y orientado a resultados.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#contacto" class="btn btn--primary">
+              Solicitar información
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#nosotros" class="btn btn--ghost">Conócenos</a>
+          </div>
+
+          <div class="hero__trust">
+            <div class="trust-pill">+10 años de experiencia</div>
+            <div class="trust-pill">Profesoras con vivencia en Inglaterra</div>
+            <div class="trust-pill">Exámenes B1 · B2 · C1</div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal reveal--delay">
+          <div class="showcase-card">
+            <div class="showcase-card__top">
+              <span class="badge">Centro de preparación</span>
+              <span class="showcase-card__city">Alcalá de Guadaíra</span>
+            </div>
+
+            <div class="showcase-card__stat">
+              <!-- TODO: Ajustar el número exacto de aprobados reales de la academia -->
+              <span class="stat-big" data-count="450" data-prefix="+">+0</span>
+              <p>Alumnos presentados que han aprobado su examen oficial</p>
+            </div>
+
+            <div class="showcase-card__divider"></div>
+
+            <div class="showcase-card__mini-grid">
+              <div>
+                <strong data-count="10" data-prefix="+" data-suffix=" años">+0 años</strong>
+                <span>Abierta en Alcalá</span>
+              </div>
+              <div>
+                <!-- TODO: Ajustar porcentaje real aproximado -->
+                <strong data-count="98" data-suffix="%">0%</strong>
+                <span>Índice de aprobados</span>
+              </div>
+            </div>
+
+            <a href="#contacto" class="showcase-card__footer">
+              <span>Reserva tu plaza o ven a visitarnos</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS + CIFRAS -->
+    <section class="section section--tinted" id="nosotros">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Sobre nosotros</span>
+          <h2>Más de 10 años enseñando inglés real en Alcalá de Guadaíra</h2>
+          <p>
+            Más que memorizar gramática, enseñamos a comunicarse con soltura. Llevamos más de una
+            década formando a estudiantes del municipio con trato cercano y seguimiento personalizado.
+          </p>
+        </div>
+
+        <!-- Cifras clave editables -->
+        <div class="metrics-grid">
+          <article class="metric-card reveal">
+            <div class="metric-card__value" data-count="10" data-prefix="+">+0</div>
+            <h3>Años de experiencia</h3>
+            <p>Más de una década abierta en Alcalá de Guadaíra acompañando a cientos de alumnos.</p>
+          </article>
+
+          <article class="metric-card reveal reveal--delay">
+            <!-- TODO: Cambiar data-count por el máximo/total real de aprobados -->
+            <div class="metric-card__value" data-count="450" data-prefix="+">+0</div>
+            <h3>Alumnos aprobados</h3>
+            <p>Estudiantes que se han presentado a convocatoria oficial y han superado su prueba.</p>
+          </article>
+
+          <article class="metric-card reveal reveal--delay-2">
+            <div class="metric-card__value" data-count="98" data-suffix="%">0%</div>
+            <h3>Tasa de éxito</h3>
+            <p>Preparación enfocada en las cuatro destrezas: speaking, listening, reading y writing.</p>
+          </article>
+
+          <article class="metric-card reveal reveal--delay-3">
+            <div class="metric-card__value" data-count="10" data-prefix="Máx. ">Máx. 0</div>
+            <h3>Alumnos por grupo</h3>
+            <p>Atención real en clase para que cada estudiante participe y pierda el miedo a hablar.</p>
+          </article>
+        </div>
+
+        <!-- Bloque destacado sobre el profesorado -->
+        <div class="teacher-spotlight reveal">
+          <div class="teacher-spotlight__badge">Nuestro profesorado</div>
+          <div class="teacher-spotlight__content">
+            <h3>Inglés aprendido y vivido en Inglaterra</h3>
+            <p>
+              Nuestras profesoras han vivido una larga temporada en Inglaterra, por lo que no solo
+              dominan la teoría académica: enseñan la pronunciación natural, las expresiones reales
+              del día a día y la seguridad necesaria para entender y hacerse entender fuera del aula.
+            </p>
+          </div>
+          <div class="teacher-spotlight__highlights">
+            <span>Pronunciación auténtica</span>
+            <span>Expresiones reales</span>
+            <span>Trato cercano y familiar</span>
+          </div>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar reveal">
+            <span class="pillar__num">01</span>
+            <div>
+              <h3>Seguimiento continuo</h3>
+              <p>Informamos periódicamente a las familias y adaptamos el ritmo según las metas de cada alumno.</p>
+            </div>
+          </div>
+          <div class="pillar reveal reveal--delay">
+            <span class="pillar__num">02</span>
+            <div>
+              <h3>Simulacros reales de examen</h3>
+              <p>Antes de presentarse, cada alumno practica con pruebas reales cronometradas para ir sin nervios.</p>
+            </div>
+          </div>
+          <div class="pillar reveal reveal--delay-2">
+            <span class="pillar__num">03</span>
+            <div>
+              <h3>Ambiente cercano y motivador</h3>
+              <p>Creemos que se aprende mucho más rápido cuando el aula es un espacio cómodo y participativo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURSOS Y NIVELES -->
+    <section class="section" id="cursos">
+      <div class="container">
+        <div class="section-head section-head--row reveal">
+          <div>
+            <span class="section-tag">Nuestros cursos</span>
+            <h2>Programas adaptados a cada etapa</h2>
+          </div>
+          <div class="filter-tabs" role="tablist" aria-label="Filtrar cursos">
+            <button class="filter-tab is-active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+            <button class="filter-tab" data-filter="jovenes" role="tab" aria-selected="false">Niños y jóvenes</button>
+            <button class="filter-tab" data-filter="examenes" role="tab" aria-selected="false">Exámenes oficiales</button>
+            <button class="filter-tab" data-filter="adultos" role="tab" aria-selected="false">Adultos</button>
+          </div>
+        </div>
+
+        <div class="courses-grid" id="coursesGrid">
+          <article class="course-card reveal" data-category="jovenes">
+            <div class="course-card__head">
+              <span class="course-tag">Infantil y Primaria</span>
+              <span class="course-age">4 – 11 años</span>
+            </div>
+            <h3>Primer contacto natural</h3>
+            <p>
+              Aprendizaje dinámico mediante juegos, fonética, escucha activa y primeras expresiones
+              para construir una base sólida desde pequeños.
+            </p>
+            <a href="#contacto" class="course-card__link" data-course="Infantil y Primaria">
+              Consultar horarios →
+            </a>
+          </article>
+
+          <article class="course-card reveal reveal--delay" data-category="jovenes">
+            <div class="course-card__head">
+              <span class="course-tag">ESO y Bachillerato</span>
+              <span class="course-age">12 – 17 años</span>
+            </div>
+            <h3>Refuerzo y fluidez</h3>
+            <p>
+              Consolidamos la gramática del instituto mientras impulsamos la conversación y
+              preparamos su salto hacia certificados B1 y B2.
+            </p>
+            <a href="#contacto" class="course-card__link" data-course="ESO y Bachillerato">
+              Consultar horarios →
+            </a>
+          </article>
+
+          <article class="course-card reveal reveal--delay-2" data-category="examenes">
+            <div class="course-card__head">
+              <span class="course-tag">Certificación Oficial</span>
+              <span class="course-age">B1 · B2 · C1 · C2</span>
+            </div>
+            <h3>Preparación de exámenes</h3>
+            <p>
+              Entrenamiento específico por destrezas, técnicas de examen, mock exams y corrección
+              detallada para asegurar el aprobado en tu convocatoria.
+            </p>
+            <a href="#contacto" class="course-card__link" data-course="Exámenes Oficiales (B1/B2/C1)">
+              Consultar horarios →
+            </a>
+          </article>
+
+          <article class="course-card reveal reveal--delay-3" data-category="adultos">
+            <div class="course-card__head">
+              <span class="course-tag">Adultos y Conversación</span>
+              <span class="course-age">Todos los niveles</span>
+            </div>
+            <h3>Inglés práctico y laboral</h3>
+            <p>
+              Clases pensadas para perder el miedo a hablar, mejorar tu perfil profesional o retomar
+              el idioma desde cero con horarios flexibles.
+            </p>
+            <a href="#contacto" class="course-card__link" data-course="Adultos y Conversación">
+              Consultar horarios →
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTADOS Y OPINIONES -->
+    <section class="section section--tinted" id="resultados">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Resultados y opiniones</span>
+          <h2>Lo que dicen nuestros alumnos y familias</h2>
+          <p>
+            La mejor garantía de nuestro trabajo son los estudiantes que alcanzan su título y nos recomiendan.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card reveal">
+            <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p>
+              “Llegué muy justa con el listening y el speaking para el B2 y gracias a los simulacros
+              y a la paciencia de los profesores aprobé a la primera.”
+            </p>
+            <footer>
+              <strong>María G.</strong>
+              <span>Alumna de B2 · Ejemplo de reseña</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal reveal--delay">
+            <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p>
+              “Mi hijo empezó en Primaria casi sin soltarse y ahora va encantado a clase. El trato
+              en la academia es súper cercano y familiar.”
+            </p>
+            <footer>
+              <strong>Carlos R.</strong>
+              <span>Padre de alumno · Ejemplo de reseña</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal reveal--delay-2">
+            <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p>
+              “Grupos pequeños donde de verdad hablas inglés desde el primer día. Totalmente
+              recomendable en Alcalá de Guadaíra.”
+            </p>
+            <footer>
+              <strong>Laura M.</strong>
+              <span>Alumna de C1 · Ejemplo de reseña</span>
+            </footer>
+          </blockquote>
+        </div>
+
+        <!-- Preguntas frecuentes rápidas -->
+        <div class="faq-wrapper reveal">
+          <h3 class="faq-title">Preguntas frecuentes</h3>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>¿Cómo sé qué grupo o nivel me corresponde?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Al escribirnos o llamarnos te asesoramos según tu edad, curso escolar u objetivo
+                  (B1, B2, C1…) para ubicarte en el grupo más adecuado.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>¿Puedo incorporarme con el curso ya empezado?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Por supuesto. Escríbenos desde el formulario indicando tu edad o nivel y te indicamos
+                  en qué grupos tenemos plazas disponibles.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>¿Dónde está ubicada exactamente la academia?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Estamos en C. San Francisco, 10, 41500 Alcalá de Guadaíra, Sevilla. Puedes ver el mapa
+                  y abrir indicaciones justo debajo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO Y UBICACIÓN -->
+    <section class="section" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <span class="section-tag">Contacto</span>
+          <h2>Hablemos de tu próximo nivel de inglés</h2>
+          <p class="contact-info__lead">
+            Déjanos tus datos y nos pondremos en contacto contigo lo antes posible para informarte
+            de horarios, tarifas y plazas disponibles.
+          </p>
+
+          <div class="info-cards">
+            <div class="info-item">
+              <div class="info-item__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <strong>Dirección</strong>
+                <p>C. San Francisco, 10<br />41500 Alcalá de Guadaíra, Sevilla</p>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=TEA+The+English+Academy+Calle+San+Francisco+10+41500+Alcala+de+Guadaira+Sevilla"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-link"
+                >
+                  Abrir en Google Maps →
+                </a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+              </div>
+              <div>
+                <strong>Facebook oficial</strong>
+                <p>TEA · The English Academy</p>
+                <a
+                  href="https://www.facebook.com/p/TEA-The-English-Academy-100054321229235/?locale=es_ES"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-link"
+                  data-facebook-link
+                >
+                  Visitar página de Facebook →
+                </a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <div>
+                <strong>Horario de atención</strong>
+                <!-- TODO: Ajustar al horario real de la academia -->
+                <p>Lunes a Viernes · 16:00 – 21:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-media">
+            <figure class="facade-card">
+              <img
+                src="assets/img/thumbnail.jpg"
+                alt="Fachada de TEA The English Academy en C. San Francisco, 10, Alcalá de Guadaíra"
+                loading="lazy"
+              />
+              <figcaption>Fachada en C. San Francisco, 10</figcaption>
+            </figure>
+
+            <div class="map-box">
+              <iframe
+                title="Mapa de TEA The English Academy en C. San Francisco, 10, Alcalá de Guadaíra"
+                src="https://maps.google.com/maps?q=TEA%20The%20English%20Academy%2C%20Calle%20San%20Francisco%2010%2C%2041500%20Alcal%C3%A1%20de%20Guada%C3%ADra%2C%20Sevilla&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario de contacto -->
+        <div class="contact-form-card reveal reveal--delay">
+          <h3>Envíanos un mensaje</h3>
+          <p class="contact-form-card__sub">
+            Te responderemos por teléfono o correo electrónico.
+          </p>
+
+          <form id="contactForm" class="form" novalidate>
+            <div class="form-group">
+              <label for="name">Nombre completo *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ej. Ana López"
+                required
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Teléfono *</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Ej. 600 123 456"
+                  required
+                  autocomplete="tel"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Correo electrónico *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="tu@correo.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="interest">Curso o nivel de interés</label>
+              <select id="interest" name="interest">
+                <option value="Información general">Información general</option>
+                <option value="Infantil y Primaria">Infantil y Primaria</option>
+                <option value="ESO y Bachillerato">ESO y Bachillerato</option>
+                <option value="Exámenes Oficiales (B1/B2/C1)">Exámenes Oficiales (B1 / B2 / C1)</option>
+                <option value="Adultos y Conversación">Adultos y Conversación</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensaje *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Cuéntanos qué necesitas, horario preferido o edad del alumno..."
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-check">
+              <input type="checkbox" id="privacy" required />
+              <label for="privacy">
+                Acepto que TEA utilice estos datos únicamente para responder a mi consulta.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              Enviar mensaje
+            </button>
+
+            <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <strong>TEA · The English Academy</strong>
+        <span>C. San Francisco, 10 · 41500 Alcalá de Guadaíra, Sevilla</span>
+      </div>
+
+      <div class="footer__links">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Sobre nosotros</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <p class="footer__copy">
+        © <span id="year"></span> TEA The English Academy · Demo web
+      </p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de contacto rápido (WhatsApp / Formulario) -->
+  <a
+    href="#contacto"
+    class="floating-cta"
+    id="whatsappBtn"
+    aria-label="Contactar por WhatsApp o formulario"
+    title="Escríbenos"
+  >
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+    </svg>
+    <span>¿Hablamos?</span>
+  </a>
+
+  <!-- Notificación sutil para la demo -->
+  <div class="toast" id="demoToast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
