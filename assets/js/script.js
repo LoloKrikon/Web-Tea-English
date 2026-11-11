@@ -27,6 +27,7 @@ function showToast(message) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  initThemeToggle();
   initFooterYear();
   initFacebookLinks();
   initWhatsappButton();
@@ -39,6 +40,50 @@ document.addEventListener('DOMContentLoaded', () => {
   initFaqAccordion();
   initContactForm();
 });
+
+function initThemeToggle() {
+  const toggleBtn = document.getElementById('themeToggle');
+  const root = document.documentElement;
+  if (!toggleBtn) return;
+
+  const applyTheme = (theme, persist = false) => {
+    const isDark = theme === 'dark';
+    root.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    toggleBtn.setAttribute('aria-pressed', String(isDark));
+    toggleBtn.setAttribute(
+      'aria-label',
+      isDark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'
+    );
+    toggleBtn.title = isDark ? 'Modo claro' : 'Modo oscuro';
+
+    if (persist) {
+      try {
+        localStorage.setItem('tea-theme', isDark ? 'dark' : 'light');
+      } catch {
+        // Ignorar si el navegador bloquea almacenamiento local
+      }
+    }
+  };
+
+  const initialTheme = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+  applyTheme(initialTheme, false);
+
+  toggleBtn.addEventListener('click', () => {
+    const nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    applyTheme(nextTheme, true);
+  });
+
+  if (window.matchMedia) {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+      try {
+        if (localStorage.getItem('tea-theme')) return;
+      } catch {
+        // Continuar con preferencia del sistema
+      }
+      applyTheme(event.matches ? 'dark' : 'light', false);
+    });
+  }
+}
 
 function initFooterYear() {
   const yearEl = document.getElementById('year');
